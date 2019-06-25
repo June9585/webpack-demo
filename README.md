@@ -43,3 +43,38 @@
 
                   export const msg = '张三'
                   import { msg } from 'yyy'
+
+## webpack 中 loader 的作用
+
+> 模块的概念是不是只存在于 js | json 这种文件中。如果需要将 图片、样式、字体等非模块的文件类型让 webpack 支持上。就需要 loader 来做处理
+
+loader - 转换器
+
+#### css 支持
+
+1. 安装 css-loader    style-loader
+  npm install --save-dev css-loader style-loader
+2. 在 webpack.config.js 中进行配置。
+3. 重新打包并看效果
+
+#### scss | sass 支持
+
+1. 安装 css-loader  style-loader  sass-loader  node-sass
+  npm install --save-dev css-loader style-loader sass-loader node-sass
+2. 在 webpack.config.js 中进行配置。
+3. 重新打包并看效果
+
+#### less 支持
+
+1. 安装 css-loader  style-loader  less-loader  less
+  npm install --save-dev css-loader style-loader less-loader less
+2. 在 webpack.config.js 中进行配置。
+3. 重新打包并看效果
+
+#### 图片的支持
+
+1. 安装 url-loader
+  npm install --save-dev url-loader
+2. 同上。。。。
+
+base64的图片有什么优势？

@@ -1,22 +1,16 @@
-// const $ = require('jquery');
-// import $ from 'jquery';
+// 接收如何使用 webpack 对 css 做打包
 
-// function Hello() {
-//   let element = $('<div>hello world</div>');
-//   $('body').append(element);
-// }
+// 将 css 做为模块的方式来引入
+import './styles/index.css';
+import './styles/a.sass';
 
-// Hello();
+// 将 图片 作为模块的方式来引入
+import myImg from './assets/avatar.jpg';
+import MyImg2 from './assets/photo.jpeg';
+console.log(MyImg2);
 
-import $ from 'jquery';
-// import hello from './utils/hello';
-// import { name } from './utils/hello';
-// 上面两行代码，完全可以写成一行
-import hello, { name } from './utils/hello';
-console.log(name);
-
-// document.documentElement.appendChild(hello('我的天'));
-
-// document.documentElement.appendChild(hello('我的地'));
-
-$('body').append(hello('我的天'));
+document.body.innerHTML = `
+  <h1>wo de css</h1>
+  <img src="${myImg}" alt=""/>
+  <img src="${MyImg2}" alt=""/>
+`;
