@@ -28,3 +28,18 @@
   output        dist/main.js
   mode          production
 3. 还可以使用 webpack --config <配置文件> 来指定配置文件。
+
+## 模块化规范有哪些，对应的实现有哪些
+
+1. commonjs       -     nodejs      同步加载
+2. AMD            -     requirejs
+3. CMD            -     seajs
+4. ESM            -     es6
+
+  ESM
+
+  1. 引入的方式     import xxx from 'yyy'
+  2. 暴露的方式     export default {}
+
+                  export const msg = '张三'
+                  import { msg } from 'yyy'
