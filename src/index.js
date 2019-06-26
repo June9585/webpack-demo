@@ -10,7 +10,7 @@ import MyImg2 from './assets/photo.jpeg';
 console.log(MyImg2);
 
 document.body.innerHTML = `
-  <h1>wo de css</h1>
+  <h1>wo de css asdfasd</h1>
   <img src="${myImg}" alt=""/>
   <img src="${MyImg2}" alt=""/>
 `;
